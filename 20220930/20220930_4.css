@@ -1,0 +1,40 @@
+*
+{
+  font-size: 30px;
+}/* 
+
+.greeting1
+{
+  color:red;
+}
+#greeting2
+{
+  color:blue;
+}
+
+input[name="username"]
+{
+  background-color: royalblue;
+  color
+} */
+
+.parent p {
+  color:red;
+}
+/* 후손,자손 선택자 */
+table td
+{
+  color:red;
+}
+
+#jjajang:active /* 클릭했을때 */
+{
+  color:white;
+  background-color: royalblue;
+}
+
+#jjambbong:hover /* 마우스를 올렸을때 */
+{
+  background-color: red;
+  color: white;
+}

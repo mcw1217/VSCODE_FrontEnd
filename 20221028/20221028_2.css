@@ -1,0 +1,24 @@
+ul
+{
+  list-style: decimal;
+}
+li:first-of-type::before
+{
+  content:"hot";
+  background-color: red;
+  color:white;
+  font-size:14px;
+  border-radius: 3px;
+  padding:0px 5px;
+  margin-right:5px;
+}
+li:nth-of-type(2)::after
+{
+  content:"new";
+  background-color: dodgerblue;
+  color:white;
+  font-size:14px;
+  border-radius: 3px;
+  padding: 0 5px;
+  margin-left:5px;
+}

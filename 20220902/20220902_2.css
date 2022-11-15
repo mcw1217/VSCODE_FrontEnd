@@ -1,0 +1,18 @@
+span, div, button 
+{
+  background-color: lightgray;
+  border: 1px solid black;
+}
+span,button,div
+{
+  /*span은 크기 조절 불가 inline이기 때문*/
+  width:200px;
+  height: 50px;
+  padding: 10px; /* padding은 모두 가능 */
+  margin: 10px; /* 상하는 겹쳐지고 좌우는 따로따로 적용*/
+
+}
+span
+{
+  display: block; /* 속성을 바꿀 수 있음*/
+}

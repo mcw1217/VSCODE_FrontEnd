@@ -1,0 +1,21 @@
+table
+{
+  width:500px;
+}
+
+td
+{
+  border: 1px solid gray;
+  text-align: center;
+}
+
+tr:first-of-type
+{
+  background-color: royalblue;
+  color: white;
+}
+
+tr:nth-of-type(n+2) td:nth-of-type(2n+1)
+{
+  background-color: yellow;
+}

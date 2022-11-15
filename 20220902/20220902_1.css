@@ -1,0 +1,125 @@
+/* div 
+{
+  width: 200px;
+  height: 100px;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+.first 
+{
+  
+}
+.second
+{
+  box-sizing: border-box; 
+  /* 위 구문 주는게 좋음 */
+  /* margin: 20px; */
+  /* 상하 마진이 겹치면 더 큰 마진으로 설정됨 */
+  /* border: 10px dashed aqua;
+  border-radius:  */
+/* }  */
+
+/* 2. 테두리 속성 */
+/* div
+{
+  width: 200px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 50px;
+  box-sizing: border-box;
+  box-sizing은 사이즈를 일정하게 만들어줌
+}
+.first
+{
+  border: 5px dashed royalblue;
+}
+.second
+{
+  border: 1px solid red;
+  border-radius: 10px 20px 30px 40px;
+}
+
+.third
+{
+  border-radius: 50%;
+}
+.fourth
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.fifth
+{
+  width: 200px;
+  height: 150px;
+  font-size: 20px;
+  padding: 10px;
+  border: 5px solid blue;
+  border-radius: 20px 0px 0px 0px;
+
+} */
+
+/* 3번 그림자 속성 */
+/* box-shadow: inset offset-x offset-y blur color */
+/* test-shadow: offset-x offset-y blur-radius color */
+div
+{
+  width: 120px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 50px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px; /* 글자를 중간으로 오게 만드는 테그*/
+  
+}
+.box1
+{
+  box-shadow: 10px 10px 10px black; 
+  display: inline-block
+}
+.box2
+{
+  box-shadow: 0 0 10px royalblue;
+  display: inline-block
+}
+.box3
+{
+  box-shadow: 10px 10px 0px red;
+  display: inline-block
+}
+.box4
+{
+  box-shadow: inset 0 0 10px royalblue;
+  display: inline-block
+}
+.box5
+{
+  box-shadow: inset 0 0 50px black;
+  display: inline-block
+}
+
+.box6
+{
+  box-shadow: 4px 4px 5px blue, 5px 5px rgb(45, 45, 168), 8px 8px 5px rgb(94, 94, 207), 10px 10px 5px darkblue;
+  display: inline-block
+}
+.box7
+{
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  text-shadow: 10px 10px 10px red;
+  border: 0;
+  display: inline-block
+  
+
+
+}
+.layer1,.layer2
+{
+  width: 1000px;
+  height: 200px;
+}

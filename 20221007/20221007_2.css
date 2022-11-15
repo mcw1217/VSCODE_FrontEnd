@@ -1,0 +1,18 @@
+/* div.first > h2#_1th
+{
+  color:red;
+} */
+
+h2:first-child
+{
+  color:blue
+}
+
+h2:last-child
+{
+  color:red
+}
+h2:nth-child(2n+1) /* n의 인덱스는 0부터 가능하지만 child 인덱스는 1부터로 돼 있음 */
+{
+  background-color: yellow;
+}

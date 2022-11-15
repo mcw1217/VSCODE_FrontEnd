@@ -1,0 +1,25 @@
+ul{
+  margin:20px;
+  
+}
+li::before
+{
+  content:"@";
+  color: dodgerblue;
+  margin-right:5px;
+}
+
+li
+{
+  margin-bottom: 5px;
+}
+
+li.disable::after
+{
+  content:"주문불가";
+  color:red;
+  font-size:12px;
+  margin-left:5px;
+
+
+}

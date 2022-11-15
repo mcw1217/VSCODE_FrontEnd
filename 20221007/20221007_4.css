@@ -1,0 +1,15 @@
+div.first ~ p /* 전체 p들을 계산하고 div.first있는 p만 적용됨  */
+{
+  color:red
+}
+
+div.first + p /* div.first 뒤에 나오는 p하나만을 뜻함 */
+{
+  background-color:yellow;
+}
+
+div.first ~ p:nth-of-type(2n)
+/* 모든 p로 계산하지만 적용은 div.first 뒤에 있는 p만 적용된다. */
+{
+  background-color: orange;
+}

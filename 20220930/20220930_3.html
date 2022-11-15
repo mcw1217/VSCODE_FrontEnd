@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1. child '>' -->
+  <div>
+    <ul>
+      <li>asdf</li>
+    </ul>
+  </div>
+
+  <!-- 2. siblingL "+" -->
+  <div></div>
+  <p></p>
+  <span></span>
+
+  <!-- 3. climb-up "^" -->
+  <div>
+    <ul>
+      <li></li>
+    </ul>
+    <span></span>
+  </div>
+  <div>
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+  <span></span>
+
+  <div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  (div>header>ul>li*2)*2
+  div.person>ul>li
+  <!-- id => "#" -->
+
+  <!-- Item Numbering => "$" -->
+  ul>li#link$*5
+  ul>li#link$@4*5    <!-- 4부터 시작해서 5개 -->
+
+  ul>li#link$@-3*3 3부터 시작인데 거꾸로 시작하니 5 4 3 이 됨
+
+  ul>li#link$-3*3 <!-- $부분만 바뀌고 -3은 안 바뀌는 것 -->
+  <ul>
+    <li id="link1-3"></li>
+    <li id="link2-3"></li>
+    <li id="link3-3"></li>
+  </ul>
+
+  <!-- Text => '{}' -->
+  div>ul>li{person $}*3
+  <div>
+    <ul>
+      <li>person 1</li>
+      <li>person 2</li>
+      <li>person 3</li>
+    </ul>
+  </div>
+
+  <!-- Custom attribute => '[]' -->
+  table>tr>td[bgcolor="red" colspan="2"]
+  <table>
+    <tr>
+      <td bgcolor="red" colspan="2"></td>
+    </tr>
+  </table>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+*
+{
+  font-size: 20px;
+}
+
+.box
+{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border:1px solid black;
+  display: inline-block;
+  line-height: 100px;
+  text-align: center;
+}
+
+body
+{
+  text-align:center;
+}
+.container_child
+{
+  display: inline-block;
+  
+}

@@ -1,0 +1,53 @@
+
+/* 
+body
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 브라우저의 화면을 다 쓰는것 동적으로 변환됨*/ 
+/*} */
+
+.container
+{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid blue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container > a
+{
+  font-size:20px;
+  text-decoration: none; /* a태그의 밑줄을 없애줌 */
+  color: black
+}
+
+a::before
+{
+  content:"01";
+  background-color: royalblue;
+  color: white;
+  width:50px;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 1px;
+  width:50px;
+  margin-right:3px;
+}
+
+a::after
+{
+  content:"update";
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-left:5px;
+  padding:1px;
+  
+
+}
+

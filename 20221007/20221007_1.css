@@ -1,0 +1,21 @@
+/* 1.checked 상태 주기 */
+
+input[type="radio"]:checked+label /* +label을 붙여야 인식이 됨 / 옆에 붙는 labal을 붙여주는 역할 /css적용 대상은 맨 오른쪽에 있는 구문이 된다 즉 labal에 적용되는 것*/
+{
+  font-size:30px;
+} 
+
+
+/* 2.Focus */
+input[type=text]:focus
+{
+  background-color: yellow;
+  font-size: 30px;
+  color: red;
+}
+
+/* 3.enabled,disabled */
+input[type=text]:enabled
+{
+  background-color: aqua;
+}

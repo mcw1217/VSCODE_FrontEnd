@@ -1,0 +1,23 @@
+
+
+.parent
+{
+  background-color: yellow;
+  border: 1px solid red;
+  width:80vw;
+  height: 50vh;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.child
+{
+  background-color: orange;
+  width: 45%;
+  height: 45%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}

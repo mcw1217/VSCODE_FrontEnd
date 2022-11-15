@@ -1,0 +1,31 @@
+div
+{
+  font-size: 24px;
+}
+.container
+{
+  width: 800px;
+}
+#top
+{
+  background-color: green;
+}
+
+#left
+{
+  background-color: red;
+  width: 300px;
+  float: left
+}
+#right
+{
+  background-color: skyblue;
+  width: 500px;
+  height:160px;
+  float: right;
+}
+#bottom
+{
+  background-color: yellow;
+  clear: both;
+}

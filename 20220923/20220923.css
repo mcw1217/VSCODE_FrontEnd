@@ -1,0 +1,95 @@
+
+/* [float] clear: left,right,both */
+/* *********** */
+
+/* *
+{
+  font-size: 20px;
+}
+.container{
+  width: 700px;
+  height: 300px;
+  border: 1px solid black;
+}
+.none
+{
+  background-color: yellow;
+  height: 60px;
+}
+.left,.right
+{
+  width: 300px;
+  height: 180px;
+  /* display: inline-block; 옆으로 나란히 나오게 함 가로로 */
+  
+/*}
+.left
+{
+  background-color: orange;
+  float: left;
+}
+.right
+{
+  background-color: skyblue;
+  float: right; 
+}
+.clear
+{
+  background-color: lightgreen;
+  height: 60px;
+  clear: both;
+}
+.first
+{
+  background-color: pink;
+} */
+/* ************************* */
+/* overflow: hidden, scroll, auto
+
+
+*/
+h1
+{
+  background-color: yellow;
+
+}
+.box
+{
+  width: 100px;
+  height: 100px;
+  position: absolute; 
+  /* abolute는 top,left,right,bottom을 쓸 수 있고, 
+  상위 엘리먼트가 relative이면 상위 엘리먼트에 종속됨 
+  top, 등등의 이동은 부모를 기준으로 이동*/
+  /*  relative는 현재 위치를 기준으로 top,등등 이동 */
+}
+.container
+{
+  border:1px solid black;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+
+}
+.first
+{
+  background-color: red;
+  top: 10px;
+  left: 10px;
+  z-index:2; 
+  /* 겹쳐졌을때 엘리먼트가 위로 갈지 결정해줌 */
+}
+.second
+{
+  background-color: green;
+  top:50px;
+  left: 50px;
+  z-index:1;
+}
+.third
+{
+  background-color: blue;
+  top:90px;
+  left:90px;
+  z-index:0;
+}

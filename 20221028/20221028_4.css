@@ -1,0 +1,40 @@
+form
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+form label
+{
+  display:block;
+  margin-bottom:5px;
+}
+
+form input[type="checkbox"]
+{
+  display:none;
+}
+
+form label::before
+{
+  content: "\f00c" ; /* 유니코드를 쓰려면 \를 써야함 */
+  font-family: "fontawesome"; /* 해당 유니코드를 쓰려면 글꼴을 바꿔야함 */
+  border: 1px solid black;
+  border-radius: 1px;
+  font-size: 14px;
+  margin-right:5px;
+  color: transparent; /* 투명하게 만듦 */
+}
+
+input[type="checkbox"]:checked + label::before
+{
+  border-color: transparent;
+  color:white;
+  background-color: red;
+}
+
+
+

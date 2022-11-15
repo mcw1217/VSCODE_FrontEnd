@@ -1,0 +1,80 @@
+* {
+  font-size: 1.5rem;
+}
+
+a:link
+{
+  color: orange;
+}
+
+a:visited
+{
+  color:black;
+}
+
+p::first-letter /* 첫번째 글자 */
+{
+  color:red;
+}
+
+p::first-line /* 첫번째 줄 */
+{
+  background-color:yellow;
+}
+p::selection /* 드레그할때의 색 */
+{
+  background-color: lightgray;
+}
+
+button.menu::before /* 문장의 앞에 써짐 */
+{
+  content:"짬뽕" ;
+  color: white;
+  background-color: red;
+  font-size:16px;
+}
+
+/* 문장의 뒤에 써짐 */
+button.menu::after 
+{
+  content:"짜장";
+  font-size:16px;
+  background-color: black;
+  color:white;
+}
+
+button.kimchi::after 
+{
+  content:"new";
+  color:red;
+  font-size:30px;
+  position:absolute;
+}
+
+span:first-of-type
+{
+  position:relative;
+}
+
+span
+{
+  display: block;
+}
+span:first-of-type::after
+{
+  content:"new";
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  position: absolute;
+  top:0;
+}
+/* position이 absolute일때 bottom top으로 이동하려면 absolute의 바탕 개체가 position이 relative여야 한다. */
+
+span:not(.first) /* class가 first가 아닌 것들으 뜻함 */
+{
+  color: blue;
+}
+
+/* : 는 가상클래스 ::는 가상요소 라고한다.
+이것들을 가상 선택자라고 함 */

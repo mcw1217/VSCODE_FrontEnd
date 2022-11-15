@@ -1,0 +1,12 @@
+img{
+  float: right;
+}
+div.box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* display: inline-block; 사진이 옆으로 붙음 */
+  font-size: 30px;
+  float: right; /*옆으로 붙는다 */ 
+  margin: 3px;
+}
